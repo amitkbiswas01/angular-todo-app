@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { By } from '@angular/platform-browser';
 
 import { MenuComponent } from './menu.component';
 import { ButtonComponent } from '~/app/components/shared/button/button.component';
-import { By } from '@angular/platform-browser';
 
 describe('MenuComponent', () => {
   let component: MenuComponent;

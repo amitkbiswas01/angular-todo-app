@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output, ViewChild } from '@angular/core';
+
 import { Todo } from '~/app/models/todo.model';
 import { TodoService } from '~/app/services/todo.service';
 import { TextareaComponent } from '~/components/shared/textarea/textarea.component';
