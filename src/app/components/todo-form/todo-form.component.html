@@ -1,0 +1,11 @@
+<form class="todo-form" (ngSubmit)="onSubmit()">
+  <app-textarea [isFormSubmitted]="isFormSubmitted"></app-textarea>
+  <div class="button-group">
+    <app-button buttonType="submit">
+      {{ addTodoLabel }}
+    </app-button>
+    <app-button buttonClass="icon-button" (clickEvent)="resetAddForm()">
+      <img src="assets/icons/icon-delete.png" alt="delete icon" />
+    </app-button>
+  </div>
+</form>

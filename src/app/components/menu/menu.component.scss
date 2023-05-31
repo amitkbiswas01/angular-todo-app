@@ -1,0 +1,9 @@
+@import "src/styles/variables";
+@import "src/styles/mixins";
+
+.menu {
+  @include horizontal-spacing();
+
+  margin-top: 128px;
+  margin-bottom: 36px;
+}
