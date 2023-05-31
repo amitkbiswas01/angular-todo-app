@@ -1,0 +1,10 @@
+<section class="todo-list">
+  <app-todo-form
+    *ngIf="isAddTodoFormVisible"
+    (hideAddFormEvent)="hideAddForm()"
+  ></app-todo-form>
+  <div *ngFor="let todo of todos; trackBy: trackByFn" class="todo-item">
+    {{ todo.getTitle() }}
+    {{ todo.getCreatedAt().toLocaleDateString() }}
+  </div>
+</section>
