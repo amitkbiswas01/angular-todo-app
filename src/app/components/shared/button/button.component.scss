@@ -1,0 +1,50 @@
+@import "src/styles/mixins";
+@import "src/styles/variables";
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+.text-button {
+  padding: 6px 14px;
+  border: 1px solid $secondary-gray;
+  border-radius: 4px;
+  background-color: $primary-white;
+
+  &:hover {
+    color: $primary-white;
+    background-color: $primary-accent;
+  }
+}
+
+.text-icon-button {
+  @include flex-layout();
+
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: $primary-accent;
+
+  &:hover {
+    scale: 1.05;
+  }
+
+  ::ng-deep {
+    img {
+      width: 16px;
+      height: auto;
+      margin-right: 8px;
+    }
+
+    span {
+      color: $primary-white;
+    }
+  }
+}
+
+.icon-button {
+  &:hover {
+    scale: 1.05;
+  }
+}

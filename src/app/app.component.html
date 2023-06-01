@@ -1,1 +1,13 @@
-<app-navbar></app-navbar>
+<router-outlet>
+  <main>
+    <app-navbar></app-navbar>
+    <app-menu
+      [isAddTodoFormVisible]="isAddTodoFormVisible"
+      (updateAddTodoFormVisibility)="updateAddTodoFormVisibility($event)"
+    ></app-menu>
+    <app-todo-list
+      [isAddTodoFormVisible]="isAddTodoFormVisible"
+      (updateAddTodoFormVisibility)="updateAddTodoFormVisibility($event)"
+    ></app-todo-list>
+  </main>
+</router-outlet>

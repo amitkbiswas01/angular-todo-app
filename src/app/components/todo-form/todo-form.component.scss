@@ -1,0 +1,14 @@
+@import "src/styles/mixins";
+
+.todo-form {
+  padding: 16px;
+  border: 2px solid $secondary-gray;
+  border-radius: 4px;
+
+  .button-group {
+    @include flex-layout($justify-content: space-between);
+
+    width: 100%;
+    margin-top: 12px;
+  }
+}
