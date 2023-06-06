@@ -1,0 +1,15 @@
+<div [ngClass]="['todo-item', classes]">
+  <h2 class="title">{{ todo.getTitle() }}</h2>
+  <p class="date">
+    {{ "Created at: " + todo.getCreatedAt().toLocaleDateString() }}
+  </p>
+  <div class="button-group">
+    <app-button
+      buttonClass="icon-button"
+      testId="delete-todo-btn"
+      (clickEvent)="deleteTodo()"
+    >
+      <img src="assets/icons/icon-delete.png" alt="delete icon" />
+    </app-button>
+  </div>
+</div>

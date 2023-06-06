@@ -15,4 +15,8 @@ export class TodoService {
   addTodo(todo: Todo) {
     this.todos.push(todo);
   }
+
+  deleteTodo(todoId: number) {
+    this.todos = this.todos.filter((todo) => todo.getId() !== todoId);
+  }
 }

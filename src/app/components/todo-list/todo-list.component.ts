@@ -17,6 +17,10 @@ export class TodoListComponent implements OnInit {
   constructor(private todoService: TodoService) {}
 
   ngOnInit(): void {
+    this.setTodos();
+  }
+
+  setTodos() {
     this.todos = this.todoService.getTodos();
   }
 
@@ -26,5 +30,9 @@ export class TodoListComponent implements OnInit {
 
   hideAddForm() {
     this.updateAddTodoFormVisibility.emit(!this.isAddTodoFormVisible);
+  }
+
+  refetchTodos() {
+    this.setTodos();
   }
 }
