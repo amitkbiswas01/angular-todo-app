@@ -22,7 +22,6 @@ describe('TodoFormComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
-    console.log(fixture.nativeElement);
   });
 
   it('should run #onSubmit on form submit', () => {

@@ -31,4 +31,13 @@ describe('TodoService', () => {
     expect(service.getTodos().length).toEqual(3);
     expect(service.getTodos()[2]).toEqual(mockTodo);
   });
+
+  it('#deleteTodos should delete selected todo from list', () => {
+    expect(service.getTodos().length).toEqual(0);
+
+    service.addTodo(mockTodo);
+    service.deleteTodo(mockTodo.getId());
+
+    expect(service.getTodos().length).toEqual(0);
+  });
 });

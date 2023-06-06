@@ -6,11 +6,7 @@ import { Todo } from '~/app/models/todo.model';
   providedIn: 'root',
 })
 export class TodoService {
-  private todos: Todo[] = [
-    new Todo(Date.now() + 1, new Date(), null, 'Go to market', false),
-    new Todo(Date.now() + 2, new Date(), null, 'Complete chores', false),
-    new Todo(Date.now() + 3, new Date(), null, 'Study for exam', false),
-  ];
+  private todos: Todo[] = [];
 
   getTodos() {
     return this.todos;

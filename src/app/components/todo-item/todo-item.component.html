@@ -1,7 +1,5 @@
 <div [ngClass]="['todo-item', classes]">
-  <h2 class="title">
-    {{ todo.getTitle() }}
-  </h2>
+  <h2 class="title">{{ todo.getTitle() }}</h2>
   <p class="date">
     {{ "Created at: " + todo.getCreatedAt().toLocaleDateString() }}
   </p>

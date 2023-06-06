@@ -9,7 +9,7 @@ import { TodoService } from '~/app/services/todo.service';
 })
 export class TodoItemComponent {
   @Input() todo: Todo;
-  @Input() classes: string;
+  @Input() classes = '';
 
   @Output() deleteEvent = new EventEmitter();
 
